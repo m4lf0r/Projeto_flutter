@@ -15,7 +15,13 @@ class Homepage extends StatelessWidget{
                                 style:TextStyle(color:Colors.white)
                                 ),
                                 color: Colors.red,
-                                onPressed: () {}
+                                onPressed: () {
+                                    Navigator.push(context,
+                                        MaterialPageRoute(
+                                            builder:(context) => Register()
+                                        ),
+                                    );
+                                }
                     ),
                     Divider(),
                         RaisedButton(
